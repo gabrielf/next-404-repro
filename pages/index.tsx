@@ -1,4 +1,11 @@
-/** Add your relevant code here for the issue to reproduce */
+import { GetServerSideProps } from "next/types";
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    notFound: true
+  };
+};
+
 export default function Home() {
   return null
 }
